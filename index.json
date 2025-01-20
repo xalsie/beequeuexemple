@@ -1,0 +1,18 @@
+{
+    "queues": [
+        {
+            "type": "bee",
+
+            "name": "my-awesome-queue",
+
+            "hostId": "serverTest",
+
+            "redis": {
+                "host": "redis",
+                "port": 6379,
+                "db": 0,
+                "options": {}
+            }
+        }
+    ]
+}
