@@ -1,0 +1,8 @@
+# disable node modules
+node_modules
+
+# disable build files
+lib
+
+# disable yarn files
+yarn.lock

@@ -1,0 +1,20 @@
+services:
+  # node:
+  #   container_name: node
+  #   image: node:23.6-alpine3.21
+  #   volumes:
+  #     - .:/app
+  #   working_dir: /app
+
+  redis:
+    container_name: redis
+    image: redis:alpine
+    ports:
+      - "6379:6379"
+
+  arena:
+    image: mixmaxhq/arena
+    ports:
+      - "4567:4567"
+    volumes:
+      - ./index.json:/opt/arena/index.json
